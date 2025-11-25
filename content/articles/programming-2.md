@@ -1,13 +1,18 @@
 ---
-title: "Advent of Code in the Browser!"
+title: "Minimum!"
 description: ""
 omit_header_text: true
-featured_image: images/shiva_moon_landscape.jpg
-summary: "Another sample programming article."
+featured_image: images/h1.png
+summary: "Returns the smallest of the numbers given as input parameters."
 type: page
 weight: 3
 ---
 
+----
+Title: "Minimum!"
+----
+title: "minimum!"
+---
 
 This article is an application of the Advent of Code 2022 Day 1 solution to the context of the browser.
 

@@ -13,7 +13,7 @@ weight: 2
 
 An array is a list-like container that holds a collection of items. These items are stored in a specific order, and each item can be accessed using an index number, starting from 0.
 
-### Example
+### Practical Example
 
 ```
 let colors = ["red", "blue", "green"];
@@ -56,7 +56,8 @@ The result shows that you can create an array with numbers, things, or a combina
 You must write two functions:
 >ReverseArray(arr)
 Creates a new array with elements in reversed order.
-Does not change the original array (pure function).
+Does not change the 
+original array (pure function).
 
 >ReverseArrayInPlace(arr)
 Reverses the elements inside the original array.
@@ -73,7 +74,8 @@ In this section I will explain a practical exercise from the page <a href="https
 Reversing an Array
 console.log("\nExercise 4.2: Reversing an array"); // Print title
 
-function reverseArray(array) { // Function that creates a new reversed array (does not change original)
+function reverseArray(array) { // Function that creates a new reversed array 
+(does not change original)
   let result = [];                
   for (let i = array.length - 1; i >= 0; i--) {
     result.push(array[i]);// Add elements from end to start
@@ -81,7 +83,8 @@ function reverseArray(array) { // Function that creates a new reversed array (do
   return result;                  
 }
 
-function reverseArrayInPlace(array) { // Function that reverses array in place (changes the original array)
+function reverseArrayInPlace(array) { // Function that reverses array in place 
+(changes the original array)
   for (let i = 0; i < Math.floor(array.length / 2); i++) {
     let j = array.length - 1 - i; // Index from the end
     let temp = array[i]; // Save current element
@@ -92,3 +95,63 @@ function reverseArrayInPlace(array) { // Function that reverses array in place (
 }
 
 ```
+## Practical Example from Reverse Array
+
+<p>Enter your array (example: 1,2,3,4,5):</p>
+<input type="text" id="inputReverse" placeholder="1,2,3,4,5">
+<button onclick="reverseAndShow()">Run</button>
+
+<pre id="resultReverse" style="background:#f0f0f0; padding:10px;"></pre>
+
+{{< rawhtml >}}
+<script>
+function reverseArrayInPlace(array) {
+    for (let i = 0; i < Math.floor(array.length / 2); i++) {
+        let temp = array[i];
+        array[i] = array[array.length - 1 - i];
+        array[array.length - 1 - i] = temp;
+    }
+}
+
+function reverseAndShow() {
+    const input = document.getElementById("inputReverse").value;
+    const result = document.getElementById("resultReverse");
+
+    let array = input.split(",").map(x => x.trim());
+    let original = [...array];
+
+    reverseArrayInPlace(array);
+
+    result.textContent =
+        "Original array: " + JSON.stringify(original) + 
+        "\nReversed array: " + JSON.stringify(array);
+}
+</script>
+{{< /rawhtml >}}
+
+<!-- Conclusion Section -->
+<div style="
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    border-radius: 15px;
+    padding: 25px;
+    margin-top: 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+">
+    <h2 style="
+        text-align: center;
+        color: #fff;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        margin-bottom: 15px;
+    ">🎯 Conclusion</h2>
+    <p style="font-size: 16px; line-height: 1.6;">
+        Reversing an array may seem like a simple task, but it teaches two fundamental ideas in programming: pure functions and in-place transformations. 
+        With reverseArray, we saw how a function can take a value, process it, and return a new result without modifying the original data a key concept in functional programming. 
+        On the other hand, <code>reverseArrayInPlace</code> showed how to directly transform the existing array by swapping its elements, which is more memory-efficient and often used in real-world applications.
+    </p>
+    <p style="font-size: 16px; line-height: 1.6;">
+        Understanding the difference between these methods helps improve problem-solving skills, teaches when to preserve data, and prepares you for more advanced concepts like data structures, algorithms, and performance optimization. 
+        Mastering exercises like this builds a strong foundation for writing cleaner, smarter, and more efficient JavaScript code.
+    </p>
+</div>
