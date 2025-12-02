@@ -1,7 +1,7 @@
 ---
 title: Welcome
 description: .
-src: "/images/joe.jpg"
+featured_image: "/images/joe.jpg"
 ---
 <!-- Contenedor general para centrar todo -->
 <div style="text-align: center;">
