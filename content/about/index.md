@@ -2,7 +2,7 @@
 title: About Jose
 description: ""
 omit_header_text: false
-featured_image: /images/bq.avif
+scr: /images/bq.avif
 type: page
 ---
 
