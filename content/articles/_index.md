@@ -1,7 +1,8 @@
 ---
 title: "Articles"
 description: ""
-featured_image: "images/pp.jpg"
+cascade:
+  featured_image: "images/pp.jpg"
 ---
 
 <blockquote>
