@@ -1,47 +1,11 @@
 {{ define "main" }}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>{{ .Title }}</title>
-  <meta name="description" content="{{ .Params.description }}">
-  <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      font-family: 'Courier New', Courier, monospace;
-    }
-
-    .hero {
-      width: 100%;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-image: url('{{ .Params.src | absURL }}');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      text-align: center;
-      color: white;
-      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
-    }
-
-    .image-top-250 {
-      display: block;
-      margin: 0 auto 20px auto;
-      max-width: 350px;
-      height: auto;
-    }
-
-    .typing-text {
-      font-size: 50px;
-      line-height: 1.6;
-      display: inline-block;
-      max-width: 800px;
-    }
-
-    .
+  <div class="horizontal-scroll">
+    {{ range (split .Content "<p>") }}
+      {{ if . }}
+      <section class="section-content cf ph3 ph5-l pv3 pv4-l f4 tc-l center lh-copy mid-gray">
+        <p>{{ . | safeHTML }}</p>
+      </section>
+      {{ end }}
+    {{ end }}
+  </div>
+{{ end }}
