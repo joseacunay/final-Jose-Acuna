@@ -2,7 +2,7 @@
 title: Welcome to my Webside
 description: .
 cascade:
-  featured_image: 'images/joe.jpg'
+  featured_image: '/images/joe.jpg'
 ---
 <!-- Contenedor general para centrar todo -->
 <div style="text-align: center;">
