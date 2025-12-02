@@ -1,8 +1,7 @@
 ---
-title: Welcome ttt
+title: Welcome
 description: .
-cascade:
-  featured_image: '/images/joe.jpg'
+featured_image: '/images/joe.jpg'
 ---
 <!-- Contenedor general para centrar todo -->
 <div style="text-align: center;">
