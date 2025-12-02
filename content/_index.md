@@ -1,32 +1,20 @@
 ---
 title: Welcome
 description: .
-featured_image: "/images/joe.jpg"
+src: "/images/joe.jpg"
 ---
-
-<div style="
-    text-align: center;
-    background-image: url('{{ .Params.src | absURL }}');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-">
+<!-- Contenedor general para centrar todo -->
+<div style="text-align: center;">
 
   <!-- GIF centrado -->
   <img class="image-top-250" src="/images/tt.gif" alt="Animated GIF">
 
   <!-- Texto con efecto typing -->
   <div id="typing-text" class="typing-text"></div>
-
 </div>
 
 <style>
+/* GIF centrado y tamaño controlado */
 .image-top-250 {
     display: block;
     margin: 0 auto 20px auto;
@@ -34,16 +22,16 @@ featured_image: "/images/joe.jpg"
     height: auto;
 }
 
+/* Texto */
 .typing-text {
     font-size: 50px;
     font-family: 'Courier New', Courier, monospace;
     line-height: 1.6;
     display: inline-block;
     max-width: 800px;
-    color: white;
-    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
 }
 
+/* Animación de colores */
 .typing-letter {
     animation: color-change 4s infinite alternate;
 }
@@ -71,13 +59,15 @@ function typeLetter() {
         index++;
         setTimeout(typeLetter, 100);
     } else {
+        // Cuando termina de escribir, espera 1 segundo y reinicia
         setTimeout(() => {
-            container.innerHTML = '';
-            index = 0;
-            typeLetter();
+            container.innerHTML = ''; // borra el texto
+            index = 0;               // reinicia el índice
+            typeLetter();            // vuelve a escribir
         }, 1000);
     }
 }
 
+// Inicia el efecto
 typeLetter();
 </script>
