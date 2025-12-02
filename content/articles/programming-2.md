@@ -8,12 +8,6 @@ type: page
 weight: 3
 ---
 
-----
-Title: "Minimum!"
-----
-title: "minimum!"
----
-
 This article is an application of the Advent of Code 2022 Day 1 solution to the context of the browser.
 
 To see it in action, you would create a properly-formatted input file. That is, each line would contain just one number, or would be blank to indicate separation between packs.  Save the file somewhere on your computer and then use the input-field below to select it.
