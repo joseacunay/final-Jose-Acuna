@@ -2,7 +2,7 @@
 title: .
 description: .
 cascade:
-  featured_image: "images/js.jpeg"
+  featured_image: "images/joe.jpg"
 ---
 <!-- Contenedor general para centrar todo -->
 <div style="text-align: center;">
