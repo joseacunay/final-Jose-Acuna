@@ -1,7 +1,7 @@
 ---
 title: Welcome
 description: .
-src: "/images/joe.jpg"
+featured_image: "/images/joe.jpg"
 ---
 
 <div style="
