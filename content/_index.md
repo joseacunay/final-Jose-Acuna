@@ -1,5 +1,5 @@
 ---
-title: .
+title: Welcome to my Webside
 description: .
 cascade:
   featured_image: '/images/joe.jpg'
