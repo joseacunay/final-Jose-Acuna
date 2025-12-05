@@ -83,7 +83,7 @@ console.log(min(0, -10)); // → -10
 
   <p>This example shows how recursion can help us solve problems step by step until reaching a base case.</p>
 
-  <h3>Summary</h3>
+  <h3>Conclution</h3>
   <ul>
     <li>The <strong>minimum</strong> is the smallest value in a set of numbers.</li>
     <li>We can use <code>Math.min</code> or define our own <code>min</code> function to get it.</li>

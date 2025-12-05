@@ -5,7 +5,7 @@ omit_header_text: false
 featured_image: images/gas1.jpeg
 categories: ["substantive", "energy"]
 tags: ["natural-gas", "extraction", "hydrocarbons", "energy-transition"]
-summary: "If you want to learn more about this topic, press the button below."
+summary: "Learn How natural gas powers thermoelectric plants by fueling gas."
 type: page
 weight: 1
 ---

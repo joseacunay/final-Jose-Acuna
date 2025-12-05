@@ -94,7 +94,7 @@ profilelink = "mailto:jacuna_yepes@georgetowncollege.edu"
 
 [[menu.main]]
   identifier = "articles"
-  name = "Exercises"
+  name = "Articles"
   url = "/articles/"
   weight = 3 
 
