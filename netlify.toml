@@ -1,0 +1,10 @@
+[build]
+  publish = "public"
+  command = "hugo --gc --minify"
+
+[build.environment]
+  HUGO_VERSION = "0.152.2"
+  DART_SASS_VERSION = "1.93.2"
+  GO_VERSION = "1.25.3"
+  NODE_VERSION = "22.20.0"
+  TZ = "Europe/Oslo"
