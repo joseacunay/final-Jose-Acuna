@@ -1,5 +1,5 @@
 /* for the social links on the about page */
-
+<button id="dark-mode-btn" style="padding:5px 10px;">Dark Mode</button>
 .ul-socials {
   list-style-type: none !important;
   padding: 0;

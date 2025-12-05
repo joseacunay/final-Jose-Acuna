@@ -6,5 +6,5 @@ cascade:
 ---
 
 <blockquote>
-Pick up the Articles more interesting for you about eloquentjavascript!
+Pick up the Articles more interesting for you!
 </blockquote>
