@@ -16,7 +16,7 @@ featured_image: ""
   color: white;
   text-align: center;
   text-shadow: 0 2px 10px rgba(0,0,0,0.5);
-  font-size: 48px;
+  font-size: 49px;
   margin: 0;
 }
 
@@ -24,7 +24,7 @@ featured_image: ""
   border: 1px solid #ccc;
   padding: 15px;
   border-radius: 8px;
-  margin-bottom: 15px;
+  margin-bottom: 85px;
 }
 
 .filter-container {
@@ -115,3 +115,4 @@ filterSelect.addEventListener("change", function() {
   infoBox.innerHTML = categoryDetails[selected];
 });
 </script>
+

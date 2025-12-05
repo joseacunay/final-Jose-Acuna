@@ -1,8 +1,8 @@
 ---
-title: .
-description: .
+title: Welcome to My Creative Hub.
+description: xxxxx .
 cascade:
-  featured_image: "images/joe.jpg"
+  featured_image: "images/f.gif"
 ---
 <!-- Contenedor general para centrar todo -->
 <div style="text-align: center;">
@@ -72,3 +72,65 @@ function typeLetter() {
 // Inicia el efecto
 typeLetter();
 </script>
+
+# What can you Learn?
+<div class="smart-bullets">
+
+  <div class="smart-bullet one">
+    ✔️ Educational and interactive guides
+  </div>
+
+  <div class="smart-bullet two">
+    ✔️ Natural Gas Learning Workshop
+  </div>
+
+  <div class="smart-bullet three">
+    ✔️ Educational articles about programming
+  </div>
+
+</div>
+
+<style>
+.smart-bullets {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin-top: 40px;
+}
+
+/* Base de viñetas */
+.smart-bullet {
+    position: absolute;
+    font-size: 26px;
+    font-family: 'Courier New', monospace;
+    opacity: 0;
+    transform: translateY(50px) translateX(0);
+    animation: appearMove 1s forwards ease-out;
+}
+
+/* Animación combinada: aparecer + moverse */
+@keyframes appearMove {
+    0% { opacity: 0; transform: translateY(50px) translateX(0); }
+    50% { opacity: 1; transform: translateY(0) translateX(0); }
+    100% { opacity: 1; transform: translateY(0) translateX(var(--finalX)); }
+}
+
+/* Posiciones finales usando CSS variables */
+.one {
+    --finalX: 0;     /* izquierda */
+    left: 120%;
+    animation-delay: 0s;
+}
+
+.two {
+    --finalX: -20%;  /* centro */
+    left: 20%;
+    animation-delay: 0.5s;
+}
+
+.three {
+    --finalX: 0;     /* derecha */
+    right: 120%;
+    animation-delay: 1s;
+}
+</style>
