@@ -116,3 +116,30 @@ console.log(min(0, -10)); // → -10
     transform: translateY(-2px);
   }
 </style>
+
+
+<!-- Fixed Button to Minimun -->
+<a href="/articles/programming-3/" id="mini">Site Enhancement!</a>
+
+<style>
+  /* Styles for the fixed button */
+  #mini {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: background-color 0.3s, transform 0.2s;
+    z-index: 1000;
+  }
+
+  #reversingBtn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+</style>

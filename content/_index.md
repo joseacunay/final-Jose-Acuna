@@ -1,6 +1,6 @@
 ---
 title: Welcome to My Creative Hub.
-description: xxxxx .
+description: Jose Acuna
 cascade:
   featured_image: "images/f.gif"
 ---
